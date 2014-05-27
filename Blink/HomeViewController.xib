@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="highScoresButton" destination="45z-nk-Dgo" id="9lF-3w-gUe"/>
+                <outlet property="highScoresImageButton" destination="kjg-J8-pKM" id="6T0-A8-x0V"/>
+                <outlet property="playButton" destination="lpo-NU-CBr" id="li0-8h-BHa"/>
+                <outlet property="playImageButton" destination="0bR-he-MjN" id="XBe-Iw-KSZ"/>
+                <outlet property="settingsButton" destination="yqW-p0-9zc" id="nr4-MP-oXB"/>
+                <outlet property="settingsImageButton" destination="x7l-Rr-g1b" id="fQy-FU-hPh"/>
+                <outlet property="shareButton" destination="ShQ-xG-OGM" id="ygS-V7-2Ww"/>
+                <outlet property="shareImageButton" destination="igS-OU-0BH" id="IHc-eq-3Ng"/>
+                <outlet property="view" destination="2SJ-M3-wUS" id="9a0-4P-8M6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2SJ-M3-wUS">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpo-NU-CBr">
+                    <rect key="frame" x="145" y="298" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Play">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchDown" id="iJl-6J-P6z"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpInside" id="Rsu-gV-Ddi"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpOutside" id="Trx-bQ-pXK"/>
+                        <action selector="playButtonClicked:" destination="-1" eventType="touchUpInside" id="26Y-dT-IVC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShQ-xG-OGM">
+                    <rect key="frame" x="29" y="430" width="37" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Share">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchDown" id="LJP-pq-lgN"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpInside" id="QhS-cv-FY6"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpOutside" id="v2l-dT-rfE"/>
+                        <action selector="shareButtonClicked:" destination="-1" eventType="touchUpInside" id="pR6-J2-Hyx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45z-nk-Dgo">
+                    <rect key="frame" x="122" y="430" width="77" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="High Scores">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchDown" id="Mrr-R3-dhR"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpOutside" id="9ZV-MR-kj6"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpInside" id="rT8-VE-4GA"/>
+                        <action selector="highScoresButtonClicked:" destination="-1" eventType="touchUpInside" id="tOd-XF-BF0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqW-p0-9zc">
+                    <rect key="frame" x="247" y="430" width="51" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Settings">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchDown" id="5sC-RI-Ufg"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpInside" id="0Ih-fn-1RC"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpOutside" id="d41-bg-Bde"/>
+                        <action selector="settingsButtonClicked:" destination="-1" eventType="touchUpInside" id="Cvb-Yv-RuH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bR-he-MjN">
+                    <rect key="frame" x="148" y="265" width="25" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="play.png">
+                        <color key="titleColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchDown" id="zVM-uW-0bj"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpOutside" id="5Ge-ip-MAd"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpInside" id="pyq-PF-o6z"/>
+                        <action selector="playButtonClicked:" destination="-1" eventType="touchUpInside" id="HHT-ZB-SLN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjg-J8-pKM">
+                    <rect key="frame" x="148" y="397" width="25" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="cup.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchDown" id="ajm-UY-utr"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpOutside" id="NjX-Hh-rho"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpInside" id="yPe-eB-Cfe"/>
+                        <action selector="highScoresButtonClicked:" destination="-1" eventType="touchUpInside" id="THw-CG-pDW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igS-OU-0BH">
+                    <rect key="frame" x="35" y="397" width="25" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="like.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchDown" id="Ba2-9R-YuZ"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpOutside" id="AZP-9w-DeK"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpInside" id="vLN-ph-lG6"/>
+                        <action selector="shareButtonClicked:" destination="-1" eventType="touchUpInside" id="c0j-xI-Pg2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7l-Rr-g1b">
+                    <rect key="frame" x="260" y="397" width="25" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="config.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchDown" id="w7X-ZQ-rnq"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpInside" id="WXC-bT-TPO"/>
+                        <action selector="buttonReleased:" destination="-1" eventType="touchUpOutside" id="fCB-v2-mm0"/>
+                        <action selector="settingsButtonClicked:" destination="-1" eventType="touchUpInside" id="ZrE-7E-qHI"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blink!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugz-x3-no9">
+                    <rect key="frame" x="123" y="133" width="75" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="igS-OU-0BH" secondAttribute="centerX" constant="112.5" id="0ME-oK-lTf"/>
+                <constraint firstAttribute="centerX" secondItem="x7l-Rr-g1b" secondAttribute="centerX" constant="-112.5" id="9oI-ZQ-kmH"/>
+                <constraint firstItem="lpo-NU-CBr" firstAttribute="top" secondItem="0bR-he-MjN" secondAttribute="bottom" constant="8" id="GgW-70-mxh"/>
+                <constraint firstAttribute="centerX" secondItem="Ugz-x3-no9" secondAttribute="centerX" id="Go9-rf-dKb"/>
+                <constraint firstAttribute="centerX" secondItem="ShQ-xG-OGM" secondAttribute="centerX" constant="112.5" id="HIJ-iG-nNa"/>
+                <constraint firstAttribute="centerX" secondItem="45z-nk-Dgo" secondAttribute="centerX" id="Peu-rB-GXt"/>
+                <constraint firstAttribute="centerY" secondItem="Ugz-x3-no9" secondAttribute="centerY" constant="90" id="RrU-d8-Omv"/>
+                <constraint firstAttribute="bottom" secondItem="45z-nk-Dgo" secondAttribute="bottom" constant="20" id="ZIx-l8-wIg"/>
+                <constraint firstItem="ShQ-xG-OGM" firstAttribute="top" secondItem="igS-OU-0BH" secondAttribute="bottom" constant="8" id="bG3-Zq-jcs"/>
+                <constraint firstItem="yqW-p0-9zc" firstAttribute="top" secondItem="x7l-Rr-g1b" secondAttribute="bottom" constant="8" id="hNa-NH-26Y"/>
+                <constraint firstAttribute="centerX" secondItem="kjg-J8-pKM" secondAttribute="centerX" id="hVQ-hd-KH8"/>
+                <constraint firstAttribute="bottom" secondItem="yqW-p0-9zc" secondAttribute="bottom" constant="20" id="kra-nI-Qxw"/>
+                <constraint firstAttribute="centerX" secondItem="lpo-NU-CBr" secondAttribute="centerX" id="ntN-c6-RIo"/>
+                <constraint firstAttribute="bottom" secondItem="ShQ-xG-OGM" secondAttribute="bottom" constant="20" id="o2S-bp-Gxo"/>
+                <constraint firstItem="kjg-J8-pKM" firstAttribute="top" secondItem="lpo-NU-CBr" secondAttribute="bottom" constant="69" id="oVM-gy-COp"/>
+                <constraint firstItem="45z-nk-Dgo" firstAttribute="top" secondItem="kjg-J8-pKM" secondAttribute="bottom" constant="8" id="sf1-5E-VmN"/>
+                <constraint firstAttribute="centerX" secondItem="yqW-p0-9zc" secondAttribute="centerX" constant="-112.5" id="vWm-Tu-Qw4"/>
+                <constraint firstAttribute="centerX" secondItem="0bR-he-MjN" secondAttribute="centerX" id="xaL-JX-b1c"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="config.png" width="25" height="25"/>
+        <image name="cup.png" width="27" height="25"/>
+        <image name="like.png" width="25" height="23"/>
+        <image name="play.png" width="18" height="21"/>
+    </resources>
+</document>

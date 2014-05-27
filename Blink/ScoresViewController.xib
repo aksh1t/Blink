@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScoresViewController">
+            <connections>
+                <outlet property="cancelButton" destination="0Wo-VX-2g0" id="fDf-gp-W4h"/>
+                <outlet property="myTableView" destination="j5g-26-pHl" id="jKh-ry-JLg"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="479"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" allowsSelection="NO" rowHeight="36" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="j5g-26-pHl">
+                    <rect key="frame" x="0.0" y="80" width="320" height="333"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="separatorColor" red="0.49803921580314636" green="0.49803921580314636" blue="0.49803921580314636" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <color key="sectionIndexColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PG6-JR-SJO"/>
+                        <outlet property="delegate" destination="-1" id="Q6q-6l-Yz9"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wo-VX-2g0">
+                    <rect key="frame" x="138" y="427" width="44" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="Close">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelButtonClicked:" destination="-1" eventType="touchUpInside" id="MJX-kF-Jss"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Scores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkh-nr-A6g">
+                    <rect key="frame" x="105" y="30" width="110" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="20"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="0Wo-VX-2g0" firstAttribute="top" secondItem="j5g-26-pHl" secondAttribute="bottom" constant="14" id="8oF-Sb-kC6"/>
+                <constraint firstItem="zkh-nr-A6g" firstAttribute="top" secondItem="1" secondAttribute="top" constant="30" id="CwY-YJ-WJn"/>
+                <constraint firstAttribute="centerX" secondItem="j5g-26-pHl" secondAttribute="centerX" id="UQa-aM-hDC"/>
+                <constraint firstItem="j5g-26-pHl" firstAttribute="top" secondItem="zkh-nr-A6g" secondAttribute="bottom" constant="27" id="aIX-NI-XIO"/>
+                <constraint firstItem="j5g-26-pHl" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="drc-aD-4E6"/>
+                <constraint firstAttribute="centerX" secondItem="j5g-26-pHl" secondAttribute="centerX" id="o2N-Xs-nVu"/>
+                <constraint firstAttribute="centerX" secondItem="zkh-nr-A6g" secondAttribute="centerX" id="pGm-ZA-oq6"/>
+                <constraint firstAttribute="centerX" secondItem="0Wo-VX-2g0" secondAttribute="centerX" id="utj-zF-cWJ"/>
+                <constraint firstAttribute="bottom" secondItem="0Wo-VX-2g0" secondAttribute="bottom" constant="20" id="v1b-IR-Y2e"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
